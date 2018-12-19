@@ -85,36 +85,6 @@ obj.x().y().z();
 
 
 /**
- * ! Questions: remove Duplicates items from an Array.
- * ? [1, 2, 3, 9, 5]
- */
-
-/**
- * ! Solutions O1. Using Set data Structure 
- * ? Sets Doss not allow duplicate items
- * ? Sets return an Object
- * ? use spread operator to make it array
- */
-const numbers = [1, 2, 2, 3, 9, 5, 9]
-let setArr = [...new Set(numbers)];
-console.log("​setArr", setArr)
-console.log("type", typeof (setArr))
-
-
-/**
- * ! Solutions O2. Using for object key. 
- * ? Create an Empty Object
- * ? Loop through the array and added to the object
- * ? get the object keys only.
- */
-let rObj = {};
-numbers.forEach(num => rObj[num] = 'ripon');
-console.log(rObj)
-let getKeys = Object.keys(rObj);
-console.log("​Get Keys", getKeys)
-
-
-/**
  * ! Solutions 03. Using loop 
  * ? Create an empty array nam rArr
  * ? Check if the item is exits in the rArr by using includes and indexOf 
@@ -304,23 +274,3 @@ if (b === undefined) {
 //  function add(arr) {
 //      let add = arr.reduce(function())
 //  }
-
-
-
-// ? find even number 
-// We can find the the the even or number by using filter function
-// filter through all the array items and see if num % 2 === 0 then return the even number 
-// filter through all the array items and see if num % 2 !== 0 then return the Odd number
-// Array
-let numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20];
-let evenNumber = numbers.filter(num => num % 2 === 0);
-console.log("​Even Number", evenNumber)
-
-// ? Find Odd Number
-let oddNumber = numbers.filter(num => num % 2 !== 0);
-console.log("​Odd Number", oddNumber)
-
-
-
-// ? Remove duplicates number form Sorted an Array
-var names = ['Mike', 'Matt', 'Nancy', 'Adam', 'Jenny', 'Nancy', 'Carl'];

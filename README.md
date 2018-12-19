@@ -49,4 +49,4 @@
 ## Question 03: Find even and odd numbers from an Array  [Solutions](https://github.com/mdabdulripon/interview/blob/master/question3.js).
 
 
-## Question 04: What will the code below output to the console and why? [Solutions](https://github.com/mdabdulripon/interview/blob/master/question3.js).
+## Question 04: Remove duplicates items form an Array [Solutions](https://github.com/mdabdulripon/interview/blob/master/question4.js).
