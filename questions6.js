@@ -2,9 +2,9 @@
 
 function reverseStr(str) {
     return str
-            .split('')
-            .reverse()
-            .join('')
+        .split('')
+        .reverse()
+        .join('')
 }
 console.log(reverseStr('ripon'));
 
@@ -13,9 +13,9 @@ console.log(reverseStr('ripon'));
 // ! Example 02. reverse a string with Recursion
 
 function reverseWithRecursion(str) {
-    if (str === '') 
+    if (str === '')
         return '';
-    else 
+    else
         return reverseWithRecursion(str.substr(1)) + str.charAt(0);
 }
 console.log(reverseWithRecursion('ripon'));
@@ -25,7 +25,7 @@ console.log(reverseWithRecursion('ripon'));
 // ! Example 03. reverse a for loop.
 function reverseWithLoop(str) {
     let reversed = '';
-    for(let char of str) {
+    for (let char of str) {
         reversed = char + reversed
     }
     return reversed;

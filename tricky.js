@@ -175,9 +175,6 @@ console.log(Math.min()) // infinity
 
 
 
-// ! Coding Challenge
-// ! cSpell: ignore gmail, fahmida, truthy & falsey
-
 /**
  * ! 01. What will be the following code output?
  * ? Recursive

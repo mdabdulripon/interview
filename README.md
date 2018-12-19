@@ -57,3 +57,6 @@
 - [x] console.log('2' + '2');
 - [x] console.log(2 + '2' + '2' + 2 + 5 + 2);
 - [x] console.log('2' - '2');
+
+
+## Question 06: How to reverse a string? [Solutions](https://github.com/mdabdulripon/interview/blob/master/question6.js).
