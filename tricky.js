@@ -1,17 +1,3 @@
-// ! Tricky Interview Questions:
-
-
-console.log([] + []); // return empty string
-/**
- * ! What it does
- * ? When we use '+' sign it works for number and string. Otherwise it will do typecast to string. So It will convert an empty array into a string 
- *  */
-
-console.log('2' + '2'); // 22 
-// ! + operators are concatenate the number
-console.log('2' - '2'); // 0
-// ! - operators only number operator it convert the string into the number.
-
 // ! What will be the following code output?
 function a() {
     return `Hello`;
@@ -82,24 +68,6 @@ let obj = {
 }
 obj.x().y().z();
 // Answer: add Return object to each object methods.
-
-
-/**
- * ! Solutions 03. Using loop 
- * ? Create an empty array nam rArr
- * ? Check if the item is exits in the rArr by using includes and indexOf 
- * ? if item is not exits then push.
- */
-
-let rArr = [];
-numbers.forEach(num => {
-    if (rArr.includes(num) === false) {
-        return rArr.push(num)
-    }
-});
-console.log("​rArr", rArr)
-
-
 
 
 // ! What will be the following code output?

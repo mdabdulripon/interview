@@ -50,3 +50,10 @@
 
 
 ## Question 04: Remove duplicates items form an Array [Solutions](https://github.com/mdabdulripon/interview/blob/master/question4.js).
+
+## Question 05: What will the code below output to the console and why? [Solutions](https://github.com/mdabdulripon/interview/blob/master/question5.js).
+
+- [x] console.log([] + []);
+- [x] console.log('2' + '2');
+- [x] console.log(2 + '2' + '2' + 2 + 5 + 2);
+- [x] console.log('2' - '2');
