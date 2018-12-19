@@ -1,7 +1,7 @@
 # Coding Interview Questions:
 <!-- cSpell: ignore gmail, fahmida, stringify, proto, typeof, Truthy & Falsey -->
 
-## Example 01: What will the code below output to the console and why? [Solutions](https://github.com/mdabdulripon/interview/blob/master/question1.js).
+## Question 01: What will the code below output to the console and why? [Solutions](https://github.com/mdabdulripon/interview/blob/master/question1.js).
 <!-- Example 01. -->
 ```
     (function(){
@@ -20,16 +20,7 @@
     })();
 ```
 
-<!-- Example 03. -->
-```
-    funcName(); //
-    varName(); //
-    var varName = function funcName() {
-        console.log("Definition not hoisted!");
-    };
-```
-
-## Example 01: What will the code below output to the console and why? [Solutions](https://github.com/mdabdulripon/interview/blob/master/question2.js).
+## Questions 02: What will the code below output to the console and why? [Solutions](https://github.com/mdabdulripon/interview/blob/master/question2.js).
 
 <!-- Variables -->
 ```
@@ -54,3 +45,8 @@
         console.log("Definition not hoisted!");
     };
 ```
+
+## Question 03: Find even and odd numbers from an Array  [Solutions](https://github.com/mdabdulripon/interview/blob/master/question3.js).
+
+
+## Question 04: What will the code below output to the console and why? [Solutions](https://github.com/mdabdulripon/interview/blob/master/question3.js).
