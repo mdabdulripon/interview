@@ -22,7 +22,7 @@ console.log(reverseWithRecursion('ripon'));
 
 
 
-// ! Example 03. reverse a for loop.
+// ! Example 03. reverse with a for loop.
 function reverseWithLoop(str) {
     let reversed = '';
     for (let char of str) {
@@ -31,3 +31,5 @@ function reverseWithLoop(str) {
     return reversed;
 }
 console.log(reverseWithLoop('ripon'));
+
+// ! Example 04. reverse with a the array reduce() function.

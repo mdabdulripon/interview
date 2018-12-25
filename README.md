@@ -48,7 +48,6 @@
 
 ## Question 03: Find even and odd numbers from an Array  [Solutions](https://github.com/mdabdulripon/interview/blob/master/question3.js).
 
-
 ## Question 04: Remove duplicates items form an Array [Solutions](https://github.com/mdabdulripon/interview/blob/master/question4.js).
 
 ## Question 05: What will the code below output to the console and why? [Solutions](https://github.com/mdabdulripon/interview/blob/master/question5.js).
@@ -60,3 +59,6 @@
 
 
 ## Question 06: How to reverse a string? [Solutions](https://github.com/mdabdulripon/interview/blob/master/question6.js).
+
+## Question 07: Write a palindrome function. If palindrome return true or return false? [Solutions](https://github.com/mdabdulripon/interview/blob/master/question7.js).
+**If the reverse string is similar to the original one call Palindrome**

@@ -175,7 +175,7 @@ console.log(Math.min()) // infinity
 
 
 
-/**
+ /**
  * ! 01. What will be the following code output?
  * ? Recursive
  */
