@@ -13,14 +13,14 @@
 // ! Trick 2: Using Math.sign() // return the sign 
 // ! Trick 3: parseInt() return the number 
 
-function reverseInt (num) {
+function reverseInt(num) {
     // ? convert the number to -> string -> array -> reverse -> join back 
     let reverseStr = num.toString().split('').reverse().join('');
     // ? return the the result as number
     let reverseNumber = parseInt(reverseStr);
     // ? to bring back the sign 
 
-    return reverseNumber * Math.sign(num) 
+    return reverseNumber * Math.sign(num)
 
     // ? the other way bring the sign back
     // if (num > 0) {
