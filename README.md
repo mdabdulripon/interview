@@ -65,7 +65,7 @@
 
 ## Question 08: Convert a Number to String, Array and Object. [Solutions](https://github.com/mdabdulripon/interview/blob/master/question8.js).
 
-## Question 09: Write a reverse integer function. [Solutions](https://github.com/mdabdulripon/interview/blob/master/question10.js).
+## Question 09: Write a reverse integer function. [Solutions](https://github.com/mdabdulripon/interview/blob/master/question9.js).
 - [x] reverseInt(15)  || should return 51
 - [x] reverseInt(189) || should return 981
 - [x] reverseInt(500) || should return 5

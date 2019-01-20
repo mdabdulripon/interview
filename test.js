@@ -1,72 +1,36 @@
 /**
- * ! Example 08. Convert a Number to String, Array and Object and Convert a String to Number Array and Object
+ * ! Question 09: Write a reverse integer function. [Solutions](https://github.com/mdabdulripon/interview/blob/master/question9.js).
+ * 
+ * TODO:::
+ * ? reverseInt(15)  || should return 51
+ * ? reverseInt(189) || should return 981
+ * ? reverseInt(500) || should return 5
+ * ? reverseInt(-15) || should return -51
+ * ? reverseInt(-90) || should return -9
  */
 
-// ! Example 01. Convert Number to a String
-function convertNumberToString(num) {
-    let str = num.toString()
-    console.log(`​Convert Number to a String`, str);
-	console.log(`​Convert Number to a String`, typeof str);
-    
+// ! Trick 1: Using toString // return the string
+// ! Trick 2: Using Math.sign() // return the sign 
+// ! Trick 3: parseInt() return the number 
+
+function reverseInt (num) {
+    // ? convert the number to -> string -> array -> reverse -> join back 
+    let reverseStr = num.toString().split('').reverse().join('');
+    // ? return the the result as number
+    let reverseNumber = parseInt(reverseStr);
+    // ? to bring back the sign 
+
+    return reverseNumber * Math.sign(num) 
+
+    // ? the other way bring the sign back
+    // if (num > 0) {
+    //     return reverseNumber
+    // } else {
+    //     return reverseNumber * -1;
+    // }
 }
-convertNumberToString(1234);
-
-
-// ! Example 02. Convert Number to an  Array
-function convertNumberToArray(num) {
-    let arr = num.toString().split('');
-    console.log(`​convertNumber -> arr`, arr);
-    console.log(`​convertNumber -> arr`, typeof arr);
-}
-convertNumberToArray(1234);
-
-
-/**
- * ! Example 03-a. Convert Number to an Object
- * TODO:: The typical way Using For Loop
- * */
-function convertNumberToObjectTypical (num) {
-    let arr = num.toString().split('');
-    console.log(`​Convert -> Number -> string -> Array`, arr);
-    let obj = {}
-    for (let index = 0; index < arr.length; index++) {
-        const element = arr[index];
-        obj[index] = arr[index];
-    }
-    console.log(`​Convert -> Array -> Object`, obj);
-    return obj;
-}
-convertNumberToObjectTypical(1234);
-
-
-/**
- * ! Example 03-b. Convert Number to an Object
- * TODO:: The Modern way Using {...rest parameters}
- * */
-function convertNumberToObjectModernB(num) {
-    let arr = num.toString().split('');
-    let convertToObj = { ...arr }
-	console.log("​Convert to an Object", convertToObj)
-}
-convertNumberToObjectModernB(1234);
-
-
-/**
- * ! Example 03-c. Convert Number to an Object
- * TODO:: The Modern way Using Object.assign({})
- * */
-function convertNumberToObjectModernC(num) {
-    let arr = num.toString().split('');
-    let obcC = Object.assign({}, arr)
-	console.log("​convertNumberToObjectModernC -> obcC", obcC)
-}
-convertNumberToObjectModernC(1234);
-
-
-/**
- * !Example 04 -d. Short way to convert number to an Object
- * TODO:: The typical way Using For Loop
- * */
-let number = 1234;
-let obj = new Number(number);
-console.log(`​obj`, obj)
+console.log(reverseInt(15));
+console.log(reverseInt(189));
+console.log(reverseInt(500));
+console.log(reverseInt(-15));
+console.log(reverseInt(-90));
