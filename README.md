@@ -88,7 +88,8 @@
         }
     }
     console.log(foo()); // return 8 [because it is hoisted.]
-    
+```
+```
     ###### Question 2:
     function foo(){
         var bar = function() {
@@ -100,8 +101,8 @@
         };
     }
     console.log(foo()); // return 3 
-    
-    
+```
+```  
     ###### Question 3:
     console.log(foo()); // return 3 [function declaration ]
     function foo(){
@@ -113,7 +114,9 @@
             return 8; // this not return because function expression does not hoisted
         };
     }
-    ###### Question 3:
+```
+```
+    ###### Question 4:
     function foo(){
         return bar();
         var bar = function() {
@@ -126,8 +129,6 @@
     console.log(foo()); 
     // ! Return an error: [Uncaught TypeError: bar is not a function]
     // ! this not return because function expression does not hoisted.
-
-    
 ```
 
 
