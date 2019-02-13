@@ -71,3 +71,64 @@
 - [x] reverseInt(500) || should return 5
 - [x] reverseInt(-15) || should return -51
 - [x] reverseInt(-90) || should return -9
+
+
+
+
+## Question 0: What will be the output for below code and why?
+```
+    ###### Question 1:
+    function foo() {
+        function bar() {
+            return 3;
+        }
+        return bar();
+        function bar() {
+            return 8  
+        }
+    }
+    console.log(foo()); // return 8 [because it is hoisted.]
+    
+    ###### Question 2:
+    function foo(){
+        var bar = function() {
+            return 3; 
+        };
+        return bar();
+        var bar = function() {
+            return 8; // this not return because function expression does not hoisted
+        };
+    }
+    console.log(foo()); // return 3 
+    
+    
+    ###### Question 3:
+    console.log(foo()); // return 3 [function declaration ]
+    function foo(){
+        var bar = function() {
+            return 3; 
+        };
+        return bar();
+        var bar = function() {
+            return 8; // this not return because function expression does not hoisted
+        };
+    }
+    ###### Question 3:
+    function foo(){
+        return bar();
+        var bar = function() {
+            return 3;
+        };
+        var bar = function() {
+            return 8;
+        };
+    }
+    console.log(foo()); 
+    // ! Return an error: [Uncaught TypeError: bar is not a function]
+    // ! this not return because function expression does not hoisted.
+
+    
+```
+
+
+
