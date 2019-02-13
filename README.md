@@ -75,7 +75,8 @@
 
 
 
-## Question 0: What will be the output for below code and why?
+## Function Declaration & Expression
+**What will be the output for below code and why?**
 ```
     ###### Question 1:
     function foo() {
