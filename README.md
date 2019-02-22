@@ -132,5 +132,53 @@
     // ! this not return because function expression does not hoisted.
 ```
 
+### The difference between var, let and const declarations
+```
+    function varDeclaration() {
+        for(var i = 0; i < 10; i++) {
+            console.log('inside the loop-> i', i) // return 0, 1, 2, 3, 4, 5, 6, 7, 8, 9
+        }
+        console.log('outside the loop-> i', i) // return 10
+    }
+    varDeclaration();
+    // console.log('outside the function', i) // ? ReferenceError: i is not defined
+```
+> Note: The first console will print values 0 to 9 then the last console log will print the value 10. In this case, var is a functional scope which is available inside the function. The last console throws an Error because The Function Scope does not exist outside of the functions.
 
+```
+    function letDeclaration() {
+        for (let i = 0; i < 10; i++) {
+            console.log(`inside the loop`, i) // return 0, 1, 2, 3, 4, 5, 6, 7, 8, 9
+        }
+        console.log(`outside the loop`, i) // ? ReferenceError: i is not defined
+    }
+    letDeclaration();
+    console.log('outside the function', i) // ? ReferenceError: i is not defined
+```
+> Note: The first console will print values 0 to 9 let is available inside the scope. The Other two console will throw an error because let is a block label scope.
 
+```
+    const user = {
+        name: 'fahmida',
+        age: 27,
+    }
+    user.name = 'ripon'; // ! can change the value of property.
+    user.email = 'ripon@gmail.com'; // ! can add new property and assign the value 
+    console.log(`user`, user);
+
+    user = {
+        name: 'Mun Mun' // ! Can not Re Declared the the variable 
+    }
+    const person = 'fahmida';
+    console.log('person', person)
+    person = 'ripon' // ! Can not Re Declared the the variable 
+```
+
+```
+    var i
+    i = 34
+    for (let i = 0; i < 4; i++) {
+        console.log(`xxxxx`, i) // 0, 1, 2, 3
+    }
+    console.log(`yyyyy`, i) // 34
+```
