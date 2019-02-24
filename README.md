@@ -1,7 +1,7 @@
 # Coding Interview Questions:
 <!-- cSpell: ignore gmail, fahmida, stringify, proto, typeof, Truthy & Falsey -->
 
-## Question 01: What will the code below output to the console and why? [Solutions](https://github.com/mdabdulripon/interview/blob/master/question1.js).
+# What will the code below output to the console and why? [Solutions](https://github.com/mdabdulripon/interview/blob/master/question1.js).
 <!-- Example 01. -->
 ```
     (function(){
@@ -20,7 +20,7 @@
     })();
 ```
 
-## Questions 02: What will the code below output to the console and why? [Solutions](https://github.com/mdabdulripon/interview/blob/master/question2.js).
+# What will the code below output to the console and why? [Solutions](https://github.com/mdabdulripon/interview/blob/master/question2.js).
 
 <!-- Variables -->
 ```
@@ -46,11 +46,11 @@
     };
 ```
 
-## Question 03: Find even and odd numbers from an Array  [Solutions](https://github.com/mdabdulripon/interview/blob/master/question3.js).
+# Find even and odd numbers from an Array  [Solutions](https://github.com/mdabdulripon/interview/blob/master/question3.js).
 
-## Question 04: Remove duplicates items form an Array [Solutions](https://github.com/mdabdulripon/interview/blob/master/question4.js).
+# Remove duplicates items form an Array [Solutions](https://github.com/mdabdulripon/interview/blob/master/question4.js).
 
-## Question 05: What will the code below output to the console and why? [Solutions](https://github.com/mdabdulripon/interview/blob/master/question5.js).
+# What will the code below output to the console and why? [Solutions](https://github.com/mdabdulripon/interview/blob/master/question5.js).
 
 - [x] console.log([] + []);
 - [x] console.log('2' + '2');
@@ -58,14 +58,14 @@
 - [x] console.log('2' - '2');
 
 
-## Question 06: How to reverse a string? [Solutions](https://github.com/mdabdulripon/interview/blob/master/question6.js).
+# How to reverse a string? [Solutions](https://github.com/mdabdulripon/interview/blob/master/question6.js).
 
-## Question 07: Write a palindrome function. If palindrome return true or return false? [Solutions](https://github.com/mdabdulripon/interview/blob/master/question7.js).
+# Write a palindrome function. If palindrome return true or return false? [Solutions](https://github.com/mdabdulripon/interview/blob/master/question7.js).
 **If the reverse string is similar to the original one call Palindrome**
 
-## Question 08: Convert a Number to String, Array and Object. [Solutions](https://github.com/mdabdulripon/interview/blob/master/question8.js).
+# Convert a Number to String, Array and Object. [Solutions](https://github.com/mdabdulripon/interview/blob/master/question8.js).
 
-## Question 09: Write a reverse integer function. [Solutions](https://github.com/mdabdulripon/interview/blob/master/question9.js).
+# Write a reverse integer function. [Solutions](https://github.com/mdabdulripon/interview/blob/master/question9.js).
 - [x] reverseInt(15)  || should return 51
 - [x] reverseInt(189) || should return 981
 - [x] reverseInt(500) || should return 5
@@ -75,7 +75,7 @@
 
 
 
-## Function Declaration & Expression
+# Function Declaration & Expression
 **What will be the output for below code and why?**
 ```
     ###### Question 1:
@@ -132,7 +132,7 @@
     // ! this not return because function expression does not hoisted.
 ```
 
-### The difference between var, let and const declarations
+# The difference between var, let and const declarations
 ```
     function varDeclaration() {
         for(var i = 0; i < 10; i++) {
