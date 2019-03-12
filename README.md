@@ -180,3 +180,38 @@
     }
     console.log(`yyyyy`, i) // 34
 ```
+
+# Convert the object to an Array
+```
+    let obj = {
+        a: 1,
+        b: 2
+    };
+
+    // ? Step 01:
+    const arr = Object.keys(obj);
+    console.log('arr', arr);
+
+    // ? Step 02:
+    let arr2 = [];
+    for ( let item in obj) {
+        arr2.push(item);
+    }
+    console.log('arr2', arr2);
+```
+
+# Convert the Array to an Object
+```
+    let arr = ['a', 'b', 'c'];
+
+    // ? Example 01:
+    let obj1 = Object.assign({}, arr);
+    console.log('obj1', obj1)
+
+    // ? Example 02:
+    let obj2 = {};
+    for(let i = 0; i < arr.length; i++) {
+        obj2[i] = arr[i]
+    }
+    console.log('obj2', obj2)
+```
