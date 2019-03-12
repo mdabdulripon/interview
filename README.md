@@ -215,3 +215,99 @@
     }
     console.log('obj2', obj2)
 ```
+
+
+# Method Chaining
+```
+    const obj = {
+        a: 1,
+        b: 2,
+        getA() {
+            console.log(`a`, this.a);
+            // to get to next method you have to 
+            return this;
+        },
+        getB() {
+            console.log(`b`, this.b);
+        }
+    };
+    obj.getA().getB(); // it return an error in getB()
+```
+
+# Cloning an Object
+```
+    const obj = {
+        a: {
+            b: {
+                c : 1
+            }
+        }
+    };
+
+    //  Solution 1 :
+    const close = JSON.parse(JSON.stringify(obj));
+    console.log('close', close)
+
+    //  Solution 2 :
+    const clone2 = Object.assign({}, obj);
+    console.log(`clone 2:`, clone2);
+```
+# Combine this two array into one and display in order.
+```
+    const a = [1, 2, 5, 9, 10 ];
+    const b = [2, 4, 9, 12, 100];
+
+    const result = a.concat(b).sort( (a ,b) => a - b)
+    console.log(`result`, result);
+```
+
+# What will be the output of the following code?
+```
+    const obj = {
+        x: 1,
+        getX() {
+            const inner = function () {
+                console.log(`inner:`, this.x);
+            };
+            inner();
+        },
+    }
+    obj.getX(); // return undefined 
+    
+    // Solution 1 
+    const obj1 = {
+        x: 1,
+        getX() {
+            const inner = function () {
+                console.log(`inner1:`, this.x);
+            }
+            inner.bind(this)();
+        },
+    }
+    obj1.getX();
+
+    // Solution 2
+    const obj2 = {
+        x: 1,
+        getX() {
+            const inner = () => {
+                console.log(`inner2:`, this.x);
+            };
+            inner();
+        },
+    }
+    obj2.getX();
+
+    // Solution 1
+    const obj3 = {
+        x: 1,
+        getX() {
+            const self = this;
+            const inner = function () {
+                console.log(`inner3:`, self.x);
+            };
+            inner();
+        },
+    }
+    obj3.getX();
+```
