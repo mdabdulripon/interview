@@ -311,3 +311,34 @@
     }
     obj3.getX();
 ```
+
+# Create add sum function where you can pass arguments 0 to 2.
+```
+    function sum (a, b) {
+        if (b) {
+            return a + b;
+        } else if (a) {
+            return a;
+        } else {
+            return 0;
+        }
+    };
+```
+
+# Create add sum function which takes 0 to unlimited arguments including an array.
+```
+    function add(arr) {
+        let result = 0;
+        if(arr instanceof Array) {
+            for (item of arr) {
+                result += item;
+            }
+        } else {
+            for (item of arguments) {
+                result += item;
+            }
+        }
+        return result;
+    }
+```
+
