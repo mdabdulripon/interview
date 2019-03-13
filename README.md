@@ -181,7 +181,7 @@
     console.log(`yyyyy`, i) // 34
 ```
 
-# Convert the object to an Array
+## Convert the object to an Array
 ```
     let obj = {
         a: 1,
@@ -200,7 +200,7 @@
     console.log('arr2', arr2);
 ```
 
-# Convert the Array to an Object
+## Convert the Array to an Object
 ```
     let arr = ['a', 'b', 'c'];
 
@@ -217,7 +217,7 @@
 ```
 
 
-# Method Chaining
+## Method Chaining
 ```
     const obj = {
         a: 1,
@@ -234,7 +234,7 @@
     obj.getA().getB(); // it return an error in getB()
 ```
 
-# Cloning an Object
+## Cloning an Object
 ```
     const obj = {
         a: {
@@ -252,7 +252,7 @@
     const clone2 = Object.assign({}, obj);
     console.log(`clone 2:`, clone2);
 ```
-# Combine this two array into one and display in order.
+## Combine this two array into one and display in order.
 ```
     const a = [1, 2, 5, 9, 10 ];
     const b = [2, 4, 9, 12, 100];
@@ -261,7 +261,7 @@
     console.log(`result`, result);
 ```
 
-# What will be the output of the following code?
+## What will be the output of the following code?
 ```
     const obj = {
         x: 1,
@@ -312,7 +312,7 @@
     obj3.getX();
 ```
 
-# Create add sum function where you can pass arguments 0 to 2.
+## Create add sum function where you can pass arguments 0 to 2.
 ```
     function sum (a, b) {
         if (b) {
@@ -325,7 +325,7 @@
     };
 ```
 
-# Create add sum function which takes 0 to unlimited arguments including an array.
+## Create add sum function which takes 0 to unlimited arguments including an array.
 ```
     function add(arr) {
         let result = 0;
@@ -339,6 +339,22 @@
             }
         }
         return result;
+    }
+```
+
+## Create an add function that invokes two parameters or a function
+```
+    #### 01. add(2, 4); // 6
+    #### 02. add(2)(4); // 6
+
+    function add(a, b) {
+        if(a & b) {
+            return a + b;
+        } else {
+            return function(c) {
+                return a + c
+            }
+        }
     }
 ```
 
