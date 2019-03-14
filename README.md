@@ -342,11 +342,8 @@
     }
 ```
 
-## Create an add function that invokes two parameters or a function
+## Write a function that would allow you to do ```add(2, 4)``` or ```add(2)(4)```
 ```
-    #### 01. add(2, 4); // 6
-    #### 02. add(2)(4); // 6
-
     function add(a, b) {
         if(a & b) {
             return a + b;
@@ -357,4 +354,62 @@
         }
     }
 ```
+
+## Write a function that would allow you to do ```multiply(2)(4)```
+```
+    function multiply(a) {
+        return function (b) {
+            return a * b;
+        }
+    }
+    /*
+        Because it is a closer, and it has access to the variables within the outer function, 
+    */
+```
+
+## How would you check if a number is an integer?
+```
+    const isInteger = (num) => num % 1 === 0;
+    console.log(isInteger(2));       // true.
+    console.log(isInteger(2.5));     // false 
+    console.log(isInteger(9));       // true
+```
+
+## What will the following code output?
+```
+    (function(){
+        var a = b = 6;
+    })();
+    console.log(a);     // reference error : a is not defined. because it is defined inside the IIFEs.
+    console.log(b);     // return 6.
+    /*
+        It is interpreted the following way:
+        var a = b;
+        b = 6;
+        Since b is not decleared inside the IIFEs the javascript interpreter declear b in the golobal scope.
+    */
+```
+
+
+## How would you add your own method to the Array object so the following code would work?
+```
+    Array.prototype.average = function () {
+        // crete a sum function
+        var sum = this.reduce( (acc, currentV) => {
+            return acc + currentV;
+        });
+        // find the average : sum / number of elements
+        return sum / this.length;
+    };
+    var arr = [1, 2, 3, 4, 5];
+    var avg = arr.average();
+    console.log(avg);
+```
+
+
+
+
+
+
+
 
