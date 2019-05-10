@@ -1,30 +1,42 @@
 ## Coding Interview Questions:
 <!-- cSpell: ignore gmail, fahmida, stringify, proto, typeof, Truthy & Falsey -->
 
-## What will the code below output to the console and why? [Solutions](https://github.com/mdabdulripon/interview/blob/master/question2.js).
+### What will the code below output to the console and why?
 
-<!-- Variables -->
 ```
-    console.log(sentence);
-    var sentence = 'the sentence is hoisted';
-    console.log(sentence);
+    console.log(sentence); // undefined
+    var sentence = 'the sentence is hoisted.';
+    console.log(sentence); // the sentence is hoisted
+
+    /*
+        JavaScript interpreter find all the variable declarations and ```hoists``` them to the top of the function.
+        The above example is interpreter like this - 
+        var sentence; 
+        console.log(sentence);
+        sentence = 'the sentence is hoisted';
+        console.log(sentence);
+    */
 ```
 
-<!-- function declarations -->
 ```
-    isHoisted();
+    isHoisted(); 
     function isHoisted() {
-        console.log('Yes!');
+        console.log('Yes!'); // Yes!
     }
+    /*
+        Function declaration doesn't only hoist the function's name. It also hoists the actual function definition.
+    */
 ```
 
-<!-- Function expression. -->
 ```
-    funcName();
-    varName();
-    var varName = function funcName() {
-        console.log("Definition not hoisted!");
+    foo(); // ReferenceError: foo is not defined
+    expression(); // TypeError: expression is not a function
+    var expression = function foo() {
+        console.log("function declarations is not hoisted!");
     };
+    /*
+        Hoisting only occurs for function declarations, not function expressions
+    */
 ```
 
 ## Find even and odd numbers from an Array  [Solutions](https://github.com/mdabdulripon/interview/blob/master/question3.js).
